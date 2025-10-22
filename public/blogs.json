@@ -7,6 +7,7 @@
         "author": "Hamza Sohail",
         "posted_date": "September 15, 2023",
         "reading_time": 5,
+        "quantity": 1,
         "hashtags": [
             "beginners",
             "es6"
@@ -20,6 +21,7 @@
         "author": "Sajal Ali",
         "posted_date": "August 28, 2023",
         "reading_time": 4,
+        "quantity": 1,
         "hashtags": [
             "javascript",
             "coding",
@@ -34,6 +36,7 @@
         "author": "Feroze Khan",
         "posted_date": "July 10, 2023",
         "reading_time": 10,
+        "quantity": 1,
         "hashtags": [
             "mid_level",
             "react"
@@ -47,6 +50,7 @@
         "author": "Anmol Baloch",
         "posted_date": "June 5, 2023",
         "reading_time": 9,
+        "quantity": 1,
         "hashtags": [
             "development",
             "resources"

@@ -1,6 +1,6 @@
 import { FaBookmark, FaRegBookmark } from "react-icons/fa6";
 
-const Blog = ({ blog, handleBookMark, book }) => {
+const Blog = ({ blog, handleBookMark, handleReadingTime }) => {
   return (
     <div>
       <div className="card bg-base-100 w-96 shadow-sm">
@@ -11,15 +11,7 @@ const Blog = ({ blog, handleBookMark, book }) => {
           <span>{blog.author}</span>
           <img className="w-10 rounded-full" src={blog.author_img} alt="" />
           <div>
-            {book ? (
-              <FaBookmark
-                onClick={() => {
-                  handleBookMark(blog.id);
-                }}
-              />
-            ) : (
-              <FaRegBookmark onClick={() => handleBookMark(blog.id)} />
-            )}
+            <FaBookmark onClick={() => handleBookMark(blog)} />
           </div>
         </div>
         <div className="card-body">
@@ -31,7 +23,14 @@ const Blog = ({ blog, handleBookMark, book }) => {
           </div>
 
           <div className="card-actions justify-end">
-            <button className="btn btn-primary">Buy Now</button>
+            <button
+              onClick={() => {
+                handleReadingTime(blog.reading_time, blog.id);
+              }}
+              className="btn btn-primary"
+            >
+              Mark as read
+            </button>
           </div>
         </div>
       </div>
